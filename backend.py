@@ -1965,7 +1965,7 @@ def main() -> None:
     server = create_server()
     host, port = server.server_address
     lan_ip = local_network_ip()
-    print(f"Quantum web app running on this Mac at http://127.0.0.1:{port}")
+    print(f"Quantum web app running on this Mac at https://quantumsimulator.science:{port}")
     print(f"Open on your phone at http://{lan_ip}:{port}")
     if os.environ.get("OPENAI_API_KEY"):
         print(f"OpenAI explainer enabled with model: {os.environ.get('OPENAI_MODEL', DEFAULT_OPENAI_MODEL)}")
